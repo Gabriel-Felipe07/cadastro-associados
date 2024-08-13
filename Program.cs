@@ -14,17 +14,19 @@ class Program
         //criando uma variavel para armazenar o nome da verificação de cadastro
         string verificacao_cadastro = "";
         //remover associado (variavel)
-        string associado_remover = "";
+        int associado_remover;
+        //contador para remoção
+        int i = 0;
         //iniciando um programa com looping infinito
         while(true){
             Console.WriteLine("++++++++++++++++++++++++++++++");
             Console.WriteLine("+        Clube do C#         +");
             Console.WriteLine("++++++++++++++++++++++++++++++");
-            Console.WriteLine("+        1- Cadastrar        +");
+            Console.WriteLine("+   1- Cadastrar             +");
             Console.WriteLine("+   2- Mostrar associados    +");
-            Console.WriteLine("+    3- verificar cadastro   +");
-            Console.WriteLine("+    4- Remover cadastro   +");
-            Console.WriteLine("+          0- Sair           +");
+            Console.WriteLine("+   3- verificar cadastro    +");
+            Console.WriteLine("+   4- Remover cadastro      +");
+            Console.WriteLine("+   0- Sair                  +");
             Console.WriteLine("++++++++++++++++++++++++++++++");
             //pedindo a escolha do usuario
             escolha = Convert.ToInt32(Console.ReadLine());
@@ -39,13 +41,13 @@ class Program
                     //adicionando o nome na lista
                     cadastro_de_nomes.Add(names);
                 }
+                //removendo todas as ocorrencias de "stop" na lista
+                cadastro_de_nomes.RemoveAll(x => x.ToLower() == "stop");
                 Thread.Sleep(1000);
                 //fazendo a verificação de escolha do usuario 
             }else if(escolha == 2){
                 //instruções
                 Console.WriteLine("Buscando lista de associados...");
-                //removendo todas as ocorrencias de "stop" na lista
-                cadastro_de_nomes.RemoveAll(x => x.ToLower() == "stop");
                 Thread.Sleep(1000);
                 //varrendo a lista e "printando" cada item
                 foreach(var nome in cadastro_de_nomes){
@@ -67,13 +69,13 @@ class Program
                 //fazendo a verificação de escolha do usuario 
             }else if(escolha == 4){
                 Console.WriteLine("Digite o associado que será removido");
-                associado_remover = Console.ReadLine()!;
-                Console.WriteLine("Aguarde um instante");
-                Thread.Sleep(1000);
-                cadastro_de_nomes.RemoveAll(x => x.ToLower() == associado_remover);
-                Console.WriteLine("Associado removido!");
-                Thread.Sleep(2000);
+                
+                for (i = 0; i < cadastro_de_nomes.Count; i++){
+                    Console.WriteLine($"{i} - {cadastro_de_nomes[i]}");
+                }
 
+                associado_remover = Convert.ToInt32(Console.ReadLine())!;
+                cadastro_de_nomes.RemoveAt(associado_remover);
             }else if(escolha == 0){
                 //dando tchau e parando o programa
                 Console.WriteLine("Obrigado por participar!");
