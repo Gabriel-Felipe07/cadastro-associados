@@ -1,0 +1,14 @@
+C:\Users\SENAI\Desktop\lista-dicionario-csharp\bin\Debug\net7.0\lista-dicionario-csharp.exe
+C:\Users\SENAI\Desktop\lista-dicionario-csharp\bin\Debug\net7.0\lista-dicionario-csharp.deps.json
+C:\Users\SENAI\Desktop\lista-dicionario-csharp\bin\Debug\net7.0\lista-dicionario-csharp.runtimeconfig.json
+C:\Users\SENAI\Desktop\lista-dicionario-csharp\bin\Debug\net7.0\lista-dicionario-csharp.dll
+C:\Users\SENAI\Desktop\lista-dicionario-csharp\bin\Debug\net7.0\lista-dicionario-csharp.pdb
+C:\Users\SENAI\Desktop\lista-dicionario-csharp\obj\Debug\net7.0\lista-dicionario-csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENAI\Desktop\lista-dicionario-csharp\obj\Debug\net7.0\lista-dicionario-csharp.AssemblyInfoInputs.cache
+C:\Users\SENAI\Desktop\lista-dicionario-csharp\obj\Debug\net7.0\lista-dicionario-csharp.AssemblyInfo.cs
+C:\Users\SENAI\Desktop\lista-dicionario-csharp\obj\Debug\net7.0\lista-dicionario-csharp.csproj.CoreCompileInputs.cache
+C:\Users\SENAI\Desktop\lista-dicionario-csharp\obj\Debug\net7.0\lista-dicionario-csharp.dll
+C:\Users\SENAI\Desktop\lista-dicionario-csharp\obj\Debug\net7.0\refint\lista-dicionario-csharp.dll
+C:\Users\SENAI\Desktop\lista-dicionario-csharp\obj\Debug\net7.0\lista-dicionario-csharp.pdb
+C:\Users\SENAI\Desktop\lista-dicionario-csharp\obj\Debug\net7.0\lista-dicionario-csharp.genruntimeconfig.cache
+C:\Users\SENAI\Desktop\lista-dicionario-csharp\obj\Debug\net7.0\ref\lista-dicionario-csharp.dll
