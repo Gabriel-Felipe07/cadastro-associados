@@ -11,13 +11,16 @@ class Program
         string names = "";
         //definindo uma variavel para armazenar a escolha de menu do associado
         int escolha;
+        //criando uma variavel para armazenar o nome da verificação de cadastro
+        string verificacao_cadastro = "";
         //iniciando um programa com looping infinito
         while(true){
             Console.WriteLine("++++++++++++++++++++++++++++++");
-            Console.WriteLine("+        Clube do C#+        +");
+            Console.WriteLine("+        Clube do C#         +");
             Console.WriteLine("++++++++++++++++++++++++++++++");
             Console.WriteLine("+        1- Cadastrar        +");
             Console.WriteLine("+   2- Mostrar associados    +");
+            Console.WriteLine("+    3- verificar cadastro   +");
             Console.WriteLine("+          0- Sair           +");
             Console.WriteLine("++++++++++++++++++++++++++++++");
             //pedindo a escolha do usuario
@@ -47,11 +50,23 @@ class Program
                 }
                 Thread.Sleep(1000);
                 //fazendo a verificação de escolha do usuario 
+            }else if(escolha == 3){
+                Console.WriteLine("Digite o nome para buscar o cadastro");
+                verificacao_cadastro = Console.ReadLine()!;
+                Console.WriteLine("Aguarde um instante..");
+                Thread.Sleep(2000);
+                foreach(var busca in cadastro_de_nomes){
+                    if (busca.ToLower() == verificacao_cadastro.ToLower()){
+                        Console.WriteLine("Associado cadastrado!");
+                    }
+                }
+                Thread.Sleep(2000);
             }else if(escolha == 0){
                 //dando tchau e parando o programa
                 Console.WriteLine("Obrigado por participar!");
                 break;
             }
+            
         }
     }
 }
