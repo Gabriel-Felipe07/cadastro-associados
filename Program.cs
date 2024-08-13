@@ -20,12 +20,13 @@ class Program
             
             if(escolha == 1){
                 Console.WriteLine("Cadastro de associado\r\n");
-                Console.WriteLine("Digite (stop) para parar");
+                Console.WriteLine("Digite (stop) para parar de adicionar nomes.");
 
                 while(names != "stop"){
                     names = Console.ReadLine()!;
                     cadastro_de_nomes.Add(names);
                 }
+                Thread.Sleep(1000);
             }else if(escolha == 2){
                 Console.WriteLine("Buscando lista de associados...");
                 cadastro_de_nomes.RemoveAll(x => x.ToLower() == "stop");
@@ -33,6 +34,7 @@ class Program
                 foreach(var nome in cadastro_de_nomes){
                     Console.WriteLine(nome);
                 }
+                Thread.Sleep(1000);
             }else if(escolha == 0){
                 Console.WriteLine("Obrigado por participar!");
                 break;
