@@ -13,6 +13,8 @@ class Program
         int escolha;
         //criando uma variavel para armazenar o nome da verificação de cadastro
         string verificacao_cadastro = "";
+        //remover associado (variavel)
+        string associado_remover = "";
         //iniciando um programa com looping infinito
         while(true){
             Console.WriteLine("++++++++++++++++++++++++++++++");
@@ -21,6 +23,7 @@ class Program
             Console.WriteLine("+        1- Cadastrar        +");
             Console.WriteLine("+   2- Mostrar associados    +");
             Console.WriteLine("+    3- verificar cadastro   +");
+            Console.WriteLine("+    4- Remover cadastro   +");
             Console.WriteLine("+          0- Sair           +");
             Console.WriteLine("++++++++++++++++++++++++++++++");
             //pedindo a escolha do usuario
@@ -61,11 +64,21 @@ class Program
                     }
                 }
                 Thread.Sleep(2000);
+            }else if(escolha == 4){
+                Console.WriteLine("Digite o associado que será removido");
+                associado_remover = Console.ReadLine()!;
+                Console.WriteLine("Aguarde um instante");
+                Thread.Sleep(1000);
+                cadastro_de_nomes.RemoveAll(x => x.ToLower() == associado_remover);
+                Console.WriteLine("Associado removido!");
+                Thread.Sleep(2000);
+
             }else if(escolha == 0){
                 //dando tchau e parando o programa
                 Console.WriteLine("Obrigado por participar!");
                 break;
             }
+            
             
         }
     }
