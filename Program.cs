@@ -64,6 +64,7 @@ class Program
                     }
                 }
                 Thread.Sleep(2000);
+                //fazendo a verificação de escolha do usuario 
             }else if(escolha == 4){
                 Console.WriteLine("Digite o associado que será removido");
                 associado_remover = Console.ReadLine()!;
