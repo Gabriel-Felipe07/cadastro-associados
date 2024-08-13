@@ -1,4 +1,5 @@
 ﻿namespace lista_dicionario_csharp;
+using System.Collections.Generic;
 
 class Program
 {
