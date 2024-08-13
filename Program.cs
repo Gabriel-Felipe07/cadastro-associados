@@ -63,6 +63,8 @@ class Program
                 foreach(var busca in cadastro_de_nomes){
                     if (busca.ToLower() == verificacao_cadastro.ToLower()){
                         Console.WriteLine("Associado cadastrado!");
+                    }else {
+                        Console.WriteLine("O associado não foi encontrado\r\nDeseja cadastra-lo? (s/n)");
                     }
                 }
                 Thread.Sleep(2000);
